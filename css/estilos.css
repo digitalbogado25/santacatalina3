@@ -1,0 +1,103 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #9599d3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.card {
+    background: rgb(249, 250, 249);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Estilo para el cartelito de cupos */
+#cuposInfo {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+button:disabled {
+    background-color: #ccc !important;
+    cursor: not-allowed;
+}
+
+/* ... (Resto de tus estilos de radio-group, header, etc.) ... */
+
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #c188c5;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #aa7fb4;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.radio-option {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #d6c5d5;
+    border: 1px solid #b37cab;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.radio-option input {
+    width: auto;
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #866b8a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover { background-color: #6d5671; }
+button:disabled { background-color: #ccc; }
+
+#mensajeEstado {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
